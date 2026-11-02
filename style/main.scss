@@ -547,3 +547,105 @@ hr {
     }
   }
 }
+
+html, body {
+  background-color: #f7f1e8;
+  background-image: linear-gradient(135deg, #f7f1e8 0%, #f5eee7 48%, #f2f1e7 100%);
+  color: #5d504a;
+}
+
+h1.title,
+a {
+  color: #526b59;
+}
+
+.score-container, .best-container {
+  background: #91aa91;
+  color: #fffdf8;
+  border-radius: 8px;
+}
+
+.score-container:after, .best-container:after {
+  color: #f4eee3;
+}
+
+.restart-button,
+.game-container .game-message a {
+  background: #647f69;
+  color: #fffdf8;
+  border-radius: 8px;
+  transition: background 150ms ease, transform 150ms ease;
+}
+
+.restart-button:hover,
+.game-container .game-message a:hover {
+  background: #526b59;
+  transform: translateY(-1px);
+}
+
+.restart-button:focus-visible,
+.game-container .game-message a:focus-visible {
+  outline: 3px solid #d59b78;
+  outline-offset: 3px;
+}
+
+.game-container {
+  background: #91aa91;
+  border-radius: 12px;
+  box-shadow: 0 16px 36px rgba(87, 105, 83, 0.16);
+}
+
+.grid-cell {
+  background: rgba(248, 244, 234, 0.48);
+  border-radius: 7px;
+}
+
+.tile .tile-inner {
+  border-radius: 7px;
+  color: #5d504a;
+}
+
+.tile.tile-2 .tile-inner,
+.tile.tile-4 .tile-inner,
+.tile.tile-8 .tile-inner,
+.tile.tile-16 .tile-inner,
+.tile.tile-32 .tile-inner,
+.tile.tile-64 .tile-inner,
+.tile.tile-128 .tile-inner,
+.tile.tile-256 .tile-inner,
+.tile.tile-512 .tile-inner,
+.tile.tile-1024 .tile-inner,
+.tile.tile-2048 .tile-inner {
+  color: #5d504a;
+}
+
+.tile.tile-2 .tile-inner { background: #f3e7d5; }
+.tile.tile-4 .tile-inner { background: #d9e8d2; }
+.tile.tile-8 .tile-inner { background: #f2c9a9; }
+.tile.tile-16 .tile-inner { background: #edb8b1; }
+.tile.tile-32 .tile-inner { background: #d6c6e8; }
+.tile.tile-64 .tile-inner { background: #e8d995; }
+.tile.tile-128 .tile-inner { background: #efc9d5; }
+.tile.tile-256 .tile-inner { background: #b9dbe3; }
+.tile.tile-512 .tile-inner { background: #e9b29a; }
+.tile.tile-1024 .tile-inner { background: #d8c6ad; }
+.tile.tile-2048 .tile-inner { background: #c6d9a8; }
+
+.tile.tile-super .tile-inner {
+  background: #526b59;
+  color: #fffdf8;
+}
+
+.game-container .game-message {
+  background: rgba(247, 241, 232, 0.78);
+  color: #5d504a;
+}
+
+.game-container .game-message.game-won {
+  background: rgba(198, 217, 168, 0.86);
+  color: #526b59;
+}
+
+hr {
+  border-bottom-color: #d8d5c9;
+}
